@@ -4,7 +4,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxIconComponent, IgxButtonDirective, IGX_INPUT_GROUP_DIRECTIVES, IGX_SELECT_DIRECTIVES, IGX_GRID_DIRECTIVES, IgxPaginatorComponent, IGX_CHIPS_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IgxSnackbarComponent } from 'igniteui-angular';
+import { IgxIconComponent, IgxButtonDirective, IGX_GRID_DIRECTIVES, IgxPaginatorComponent, IGX_CHIPS_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IgxSnackbarComponent } from 'igniteui-angular';
 import { CustomersComponent } from './customers.component';
 
 describe('CustomersComponent', () => {
@@ -13,7 +13,7 @@ describe('CustomersComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CustomersComponent, NoopAnimationsModule, FormsModule, ReactiveFormsModule, RouterTestingModule, HttpClientTestingModule, IgxIconComponent, IgxButtonDirective, IGX_INPUT_GROUP_DIRECTIVES, IGX_SELECT_DIRECTIVES, IGX_GRID_DIRECTIVES, IgxPaginatorComponent, IGX_CHIPS_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IgxSnackbarComponent]
+      imports: [CustomersComponent, NoopAnimationsModule, FormsModule, ReactiveFormsModule, RouterTestingModule, HttpClientTestingModule, IgxIconComponent, IgxButtonDirective, IGX_GRID_DIRECTIVES, IgxPaginatorComponent, IGX_CHIPS_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IgxSnackbarComponent]
     })
     .compileComponents();
 

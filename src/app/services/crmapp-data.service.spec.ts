@@ -1,10 +1,10 @@
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { CRMAppService } from './crmapp.service';
+import { CRMAppDataService } from './crmapp-data.service';
 
-describe('CRMAppService', () => {
-  let service: CRMAppService;
+describe('CRMAppDataService', () => {
+  let service: CRMAppDataService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -13,7 +13,7 @@ describe('CRMAppService', () => {
         provideHttpClientTesting()
       ]
     });
-    service = TestBed.inject(CRMAppService);
+    service = TestBed.inject(CRMAppDataService);
   });
 
   it('should be created', () => {

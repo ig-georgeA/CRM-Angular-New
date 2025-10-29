@@ -32,6 +32,12 @@
 .icon-button_1 {
   --igx-button-foreground: white;
 }
+.user-drop-down {
+  left: 1813px;
+  top: 48px;
+  position: absolute;
+  min-width: min-content;
+}
 .icon {
   color: var(--ig-surface-500);
 }
@@ -41,6 +47,9 @@
 }
 .icon_1 {
   color: white;
+}
+.avatar {
+  --igx-avatar-background: transparent;
 }
 .icon_2 {
   --size: 24px;

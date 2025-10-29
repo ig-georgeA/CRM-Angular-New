@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { IGridEditDoneEventArgs, IGX_CHIPS_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_SELECT_DIRECTIVES, IgxButtonDirective, IgxDialogComponent, IgxIconComponent, IgxPaginatorComponent, IgxSnackbarComponent, IRowDataEventArgs } from 'igniteui-angular';
+import { IGridEditDoneEventArgs, IGX_CHIPS_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IgxButtonDirective, IgxDialogComponent, IgxIconComponent, IgxPaginatorComponent, IgxSnackbarComponent, IRowDataEventArgs } from 'igniteui-angular';
 import { firstValueFrom, Subject, take, takeUntil } from 'rxjs';
 import { AddressDtoForm } from '../models/northwind-swagger/address-dto-forms';
 import { CustomerDto } from '../models/northwind-swagger/customer-dto';
@@ -11,7 +11,7 @@ import { NorthwindSwaggerService } from '../services/northwind-swagger.service';
 
 @Component({
   selector: 'app-customers',
-  imports: [IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_SELECT_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IGX_CHIPS_DIRECTIVES, IGX_GRID_DIRECTIVES, IgxIconComponent, IgxButtonDirective, IgxPaginatorComponent, IgxSnackbarComponent, ReactiveFormsModule, FormsModule, RouterLink],
+  imports: [IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IGX_CHIPS_DIRECTIVES, IGX_GRID_DIRECTIVES, IgxIconComponent, IgxButtonDirective, IgxPaginatorComponent, IgxSnackbarComponent, ReactiveFormsModule, RouterLink],
   templateUrl: './customers.component.html',
   styleUrls: ['./customers.component.scss']
 })
@@ -48,8 +48,6 @@ export class CustomersComponent implements OnInit, OnDestroy {
     this._grid_Page_Index = value;
     this.grid_Data_Request$.next();
   }
-  public value?: string;
-  public value1: string = '1';
   public customerDtoFormModel: FormGroup<CustomerDtoForm>;
 
   constructor(

@@ -27,6 +27,7 @@
       notifications_none
     </igx-icon>
   </button>
+  <igx-avatar src="/assets/Avatar5.png" shape="circle" [igxToggleAction]="userDropDown" class="avatar"></igx-avatar>
 </igx-navbar>
 <div class="row-layout group">
   <igx-nav-drawer [pin]="true" width="240px" #navDrawer class="nav-drawer">
@@ -116,3 +117,17 @@
     <router-outlet></router-outlet>
   </div>
 </div>
+<igx-drop-down #userDropDown class="user-drop-down">
+  <igx-drop-down-item [isHeader]="true">
+    Hi, firstName
+  </igx-drop-down-item>
+  <igx-drop-down-item>
+    Profile
+  </igx-drop-down-item>
+  <igx-drop-down-item>
+    Settings
+  </igx-drop-down-item>
+  <igx-drop-down-item>
+    Sign out
+  </igx-drop-down-item>
+</igx-drop-down>

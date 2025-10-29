@@ -3,7 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxIconComponent, IgxButtonDirective, IGX_CARD_DIRECTIVES, IgxAvatarComponent, IGX_GRID_DIRECTIVES } from 'igniteui-angular';
+import { IgxIconComponent, IgxButtonDirective, IGX_CARD_DIRECTIVES, IgxAvatarComponent, IGX_GRID_DIRECTIVES } from '@infragistics/igniteui-angular';
 import { IgxPieChartModule, IgxCategoryChartModule } from 'igniteui-angular-charts';
 import { SupportComponent } from './support.component';
 

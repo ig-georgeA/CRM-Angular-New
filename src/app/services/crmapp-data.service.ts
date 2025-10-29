@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable } from 'rxjs';
-import { MeetingsTasksType } from '../models/crmapp/meetings-tasks-type';
+import { MeetingsTasksType } from '../models/crmapp-data/meetings-tasks-type';
 import { ErrorHandlerService } from './error-handler.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CRMAppService {
+export class CRMAppDataService {
   constructor(
     private http: HttpClient
   ) { }

@@ -79,23 +79,6 @@
   flex-grow: 1;
   flex-basis: 0;
 }
-.filters-and-sorting-1 {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: flex-start;
-  gap: 24px;
-  position: relative;
-  min-width: 50px;
-  flex-shrink: 0;
-}
-.group_1 {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 16px;
-}
 .form_fields {
   justify-content: flex-start;
   align-items: stretch;
@@ -107,14 +90,14 @@
   min-width: 500px;
   max-width: 500px;
 }
-.group_2 {
+.group_1 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   gap: 8px;
   position: relative;
 }
-.group_3 {
+.group_2 {
   justify-content: space-between;
   align-items: center;
   align-content: flex-start;
@@ -122,7 +105,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_4 {
+.group_3 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -140,40 +123,25 @@
   height: max-content;
   min-width: min-content;
 }
-.icon_1 {
-  --size: 24px;
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-}
-.hyperlink {
-  color: var(--ig-secondary-400);
-  cursor: pointer;
-  height: max-content;
-  min-width: min-content;
-}
 .chip {
   width: max-content;
   height: max-content;
 }
-.icon_2 {
+.icon_1 {
   --size: 18px;
   font-size: 18px;
   width: 18px;
   height: 18px;
 }
-.column-group {
-  position: relative;
-}
 .button {
   height: max-content;
   flex-shrink: 0;
 }
-.user-input {
-  --ig-size: var(--ig-size-small);
+.button_1 {
+  width: 100%;
   height: max-content;
-  min-width: min-content;
-  flex-shrink: 0;
+  min-width: 100%;
+  max-width: 100%;
 }
 .new_customer_form {
   justify-content: flex-start;
@@ -194,7 +162,7 @@
   height: max-content;
   min-width: min-content;
 }
-.button_1 {
+.button_2 {
   flex-shrink: 0;
 }
 .grid {

@@ -259,6 +259,22 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+.demo-content {
+  border-color: var(--ig-gray-400);
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  width: 500px;
+  height: 434px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 500px;
+  max-height: 434px;
+}
 .icon {
   --size: 24px;
   font-size: 24px;
@@ -324,6 +340,28 @@
   color: var(--ig-gray-600);
   height: max-content;
   min-width: min-content;
+}
+.image {
+  object-fit: cover;
+  margin: 0 0 24px;
+  min-width: 0;
+  min-height: 0;
+  max-width: 280px;
+  flex-shrink: 0;
+}
+.h5 {
+  color: var(--ig-secondary-400);
+  margin: 0 0 16px;
+  height: max-content;
+  min-width: min-content;
+}
+.text_2 {
+  text-align: center;
+  color: var(--ig-gray-700);
+  margin: 0 0 24px;
+  height: max-content;
+  min-width: min-content;
+  max-width: 320px;
 }
 .avatar::part(base) {
   --igx-avatar-color: var(--ig-surface-500);

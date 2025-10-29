@@ -32,44 +32,32 @@
     </div>
   </div>
   <div class="column-layout group">
-    <div class="row-layout filters-and-sorting-1">
-      <div class="row-layout group_1">
-        <igx-input-group type="search" class="user-input">
-          <igx-prefix>
-            <igx-icon class="icon_1">
-              search
-            </igx-icon>
-          </igx-prefix>
-          <input type="search" [(ngModel)]="value" placeholder="Search" igxInput />
-        </igx-input-group>
-      </div>
-      <igx-select type="box" [(ngModel)]="value1" class="user-input">
-        <igx-select-item value="1">
-          Recently updated
-        </igx-select-item>
-        <igx-select-item value="2">
-          Name
-        </igx-select-item>
-      </igx-select>
-    </div>
-    <igx-grid [data]="grid_Data_Request?.items ?? []" primaryKey="customerId" rowSelection="single" [hideRowSelectors]="true" [rowEditable]="true" pagingMode="remote" [allowFiltering]="true" filterMode="excelStyleFilter" (rowEditDone)="rowEditDoneGrid($event)" (rowAdded)="rowAddedGrid($event)" (rowDeleted)="rowDeletedGrid($event)" (rowSelectionChanging)="selectedCustomer = $event.newSelection[0]" class="grid">
+    <igx-grid [data]="grid_Data_Request?.items ?? []" primaryKey="customerId" rowSelection="single" [hideRowSelectors]="true" [rowEditable]="true" [allowAdvancedFiltering]="true" pagingMode="remote" [moving]="true" columnSelection="multiple" [allowFiltering]="true" filterMode="excelStyleFilter" (rowEditDone)="rowEditDoneGrid($event)" (rowAdded)="rowAddedGrid($event)" (rowDeleted)="rowDeletedGrid($event)" (rowSelectionChanging)="selectedCustomer = $event.newSelection[0]" class="grid">
+      <igx-grid-toolbar>
+        <igx-grid-toolbar-actions>
+          <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>
+          <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+          <igx-grid-toolbar-exporter></igx-grid-toolbar-exporter>
+          <igx-grid-toolbar-advanced-filtering></igx-grid-toolbar-advanced-filtering>
+        </igx-grid-toolbar-actions>
+        <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+      </igx-grid-toolbar>
       <igx-paginator [perPage]="grid_Page_Size" [totalRecords]="grid_Data_Request?.totalRecordsCount ?? 0" [page]="grid_Page_Index" (pageChange)="grid_Page_Index = $event" (perPageChange)="grid_Page_Size = $event"></igx-paginator>
-      <igx-column field="customerId" dataType="string" header="customerId" width="137px" [pinned]="true" [editable]="false" [filterable]="true" [sortable]="true" [selectable]="false">
+      <igx-column field="customerId" dataType="string" header="customerId" width="137px" [pinned]="true" [editable]="false" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true">
         <ng-template igxCell let-cell="cell">
-          <a [routerLink]="['/customer-details/AROUT']" class="ig-typography__body-2 hyperlink">
+          <button igxButton="flat" type="button" [routerLink]="['/customer-details/AROUT']" class="button_1">
             {{ cell.value }}
-          </a>
+          </button>
         </ng-template>
       </igx-column>
-      <igx-column field="companyName" dataType="string" header="companyName" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-      <igx-column field="contactName" dataType="string" header="contactName" [filterable]="true" [sortable]="true" [maxlength]="5" [selectable]="false"></igx-column>
-      <igx-column field="contactTitle" dataType="string" header="contactTitle" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-      <igx-column-group header="Address" [collapsible]="true" class="column-group"></igx-column-group>
-      <igx-column field="address.phone" dataType="string" header="Phone" [filterable]="true" [sortable]="true" [selectable]="false">
+      <igx-column field="companyName" dataType="string" header="companyName" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true"></igx-column>
+      <igx-column field="contactName" dataType="string" header="contactName" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true"></igx-column>
+      <igx-column field="contactTitle" dataType="string" header="contactTitle" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true"></igx-column>
+      <igx-column field="address.phone" dataType="string" header="Phone" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true">
         <ng-template igxCell let-cell="cell">
           <igx-chip class="chip">
             <igx-prefix>
-              <igx-icon class="icon_2">
+              <igx-icon class="icon_1">
                 phone
               </igx-icon>
             </igx-prefix>
@@ -77,10 +65,9 @@
           </igx-chip>
         </ng-template>
       </igx-column>
-      <igx-column-group header="Address" [collapsible]="true" class="column-group"></igx-column-group>
-      <igx-column field="address.country" dataType="string" header="Country" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-      <igx-column field="address.street" dataType="string" header="Street" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-      <igx-column field="address.city" dataType="string" header="City" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.country" dataType="string" header="Country" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true"></igx-column>
+      <igx-column field="address.street" dataType="string" header="Street" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true"></igx-column>
+      <igx-column field="address.city" dataType="string" header="City" [filterable]="true" [groupable]="true" [sortable]="true" [resizable]="true"></igx-column>
       <igx-action-strip>
         <igx-grid-pinning-actions></igx-grid-pinning-actions>
         <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
@@ -154,7 +141,7 @@
             }
           </igx-input-group>
         </ng-container>
-        <div class="row-layout group_2">
+        <div class="row-layout group_1">
           <ng-container formGroupName="address">
             <igx-input-group type="box" class="input">
               <input type="text" igxInput formControlName="region" />
@@ -208,15 +195,15 @@
       <igx-snackbar actionText="OK" (clicked)="snackbarerror.toggle()" #snackbarerror>
         Uh-oh! Something went wrong.
       </igx-snackbar>
-      <div class="row-layout group_3">
-        <button igxButton="flat" type="reset" class="button_1">
+      <div class="row-layout group_2">
+        <button igxButton="flat" type="reset" class="button_2">
           Reset
         </button>
-        <div class="row-layout group_4">
-          <button igxButton="outlined" type="button" (click)="clickButton()" class="button_1">
+        <div class="row-layout group_3">
+          <button igxButton="outlined" type="button" (click)="clickButton()" class="button_2">
             Cancel
           </button>
-          <button igxButton="contained" type="submit" class="button_1">
+          <button igxButton="contained" type="submit" class="button_2">
             Add
           </button>
         </div>

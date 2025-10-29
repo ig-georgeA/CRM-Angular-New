@@ -1,4 +1,4 @@
-# CRM App v2
+# CRM App
 
 This project was generated with [App Builder Code Gen](https://www.appbuilder.dev/platform).
 

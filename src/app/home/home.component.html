@@ -290,7 +290,7 @@
           </button>
         </div>
         <igx-list class="list">
-          @for (item of cRMAppMeetingsTasks; track item) {
+          @for (item of cRMAppDataMeetingsTasks; track item) {
             <igx-list-item [selected]="this.listSelectedItem != null && this.listSelectedItem === item" (click)="listSelectedItem = item">
               <span igxListThumbnail>
                 <igx-avatar shape="rounded" class="avatar_6 avatar_6_2">
@@ -344,7 +344,7 @@
           </button>
         </div>
         <igx-list class="list">
-          @for (item of cRMAppMeetingsTasks; track item) {
+          @for (item of cRMAppDataMeetingsTasks; track item) {
             <igx-list-item [selected]="this.listSelectedItem1 != null && this.listSelectedItem1 === item" (click)="listSelectedItem1 = item">
               <span igxListThumbnail>
                 <igx-avatar shape="rounded" class="avatar_6 avatar_6_3">

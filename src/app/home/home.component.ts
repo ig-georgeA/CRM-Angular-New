@@ -4,9 +4,9 @@ import { IGX_CARD_DIRECTIVES, IGX_CHIPS_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, 
 import { IgxCategoryChartModule } from 'igniteui-angular-charts';
 import { Subject, takeUntil } from 'rxjs';
 import { CustomerDto } from '../models/northwind-swagger/customer-dto';
-import { MeetingsTasksType } from '../models/crmapp/meetings-tasks-type';
+import { MeetingsTasksType } from '../models/crmapp-data/meetings-tasks-type';
 import { SalesType } from '../models/financial/sales-type';
-import { CRMAppService } from '../services/crmapp.service';
+import { CRMAppDataService } from '../services/crmapp-data.service';
 import { FinancialService } from '../services/financial.service';
 import { NorthwindSwaggerService } from '../services/northwind-swagger.service';
 
@@ -24,12 +24,12 @@ export class HomeComponent implements OnInit, OnDestroy {
   public listSelectedItem3?: CustomerDto;
   public financialSales: SalesType[] = [];
   public northwindSwaggerCustomerDto: CustomerDto[] = [];
-  public cRMAppMeetingsTasks: MeetingsTasksType[] = [];
+  public cRMAppDataMeetingsTasks: MeetingsTasksType[] = [];
 
   constructor(
     public financialService: FinancialService,
     public northwindSwaggerService: NorthwindSwaggerService,
-    public cRMAppService: CRMAppService,
+    public cRMAppDataService: CRMAppDataService,
   ) {}
 
 
@@ -40,8 +40,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.northwindSwaggerService.getCustomerDtoList().pipe(takeUntil(this.destroy$)).subscribe(
       data => this.northwindSwaggerCustomerDto = data
     );
-    this.cRMAppService.getMeetingsTasksList().pipe(takeUntil(this.destroy$)).subscribe(
-      data => this.cRMAppMeetingsTasks = data
+    this.cRMAppDataService.getMeetingsTasksList().pipe(takeUntil(this.destroy$)).subscribe(
+      data => this.cRMAppDataMeetingsTasks = data
     );
   }
 

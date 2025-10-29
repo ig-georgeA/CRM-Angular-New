@@ -9,7 +9,7 @@
           Deals
         </h5>
       </div>
-      <button igxButton="contained" type="button" class="button">
+      <button igxButton="contained" type="button" (click)="newDealDialog.toggle()" class="button">
         <igx-icon>
           add
         </igx-icon>
@@ -585,3 +585,26 @@
     </div>
   </div>
 </div>
+<igx-dialog [closeOnOutsideSelect]="true" #newDealDialog>
+  <igx-dialog-title>
+    <h5>
+      New Deal
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <div class="column-layout demo-content">
+      <img src="/assets/start-building.svg" alt="" class="image" />
+      <h5 class="h5">
+        Start building!
+      </h5>
+      <p class="text_2">
+        Remove the "demo-content" container, and add your own content.
+      </p>
+    </div>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" type="button" (click)="newDealDialog.toggle()" class="button_1">
+      Close
+    </button>
+  </igx-dialog-actions>
+</igx-dialog>

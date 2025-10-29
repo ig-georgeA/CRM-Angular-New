@@ -1,0 +1,480 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.page-container {
+  background-color: var(--ig-gray-100);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 16px;
+  position: relative;
+  padding: 16px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.customer_overview {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 600px;
+  flex-grow: 3;
+  flex-basis: 0;
+}
+.page-header {
+  background-color: var(--ig-surface-500);
+  border-color: var(--ig-gray-200);
+  border-width: 0px 0px 2px;
+  border-style: solid;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: space-between;
+  gap: 8px;
+  position: relative;
+  padding: 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.account-header {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+}
+.page-title {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 12px;
+  position: relative;
+  padding: 0 8px;
+  min-width: 50px;
+  min-height: min-content;
+}
+.group {
+  justify-content: center;
+  align-items: baseline;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+}
+.group_1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 36px;
+  position: relative;
+  padding: 0 0 0 44px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.group_3 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+}
+.group_4 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+}
+.customer_details {
+  background-color: var(--ig-surface-500);
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 16px;
+  flex-grow: 3;
+  flex-basis: 0;
+}
+.customer-details {
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.tab-item {
+  min-width: 100%;
+}
+.group_5 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  flex-shrink: 0;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+  padding: 8px;
+  flex-shrink: 0;
+}
+.group_7 {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.buttons {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+}
+.accordion {
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+.group_8 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_9 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  flex-shrink: 0;
+}
+.group_10 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_11 {
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+}
+.group_12 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+}
+.demo-content {
+  border-color: var(--ig-secondary-200);
+  border-width: 2px;
+  border-style: dashed;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 32px;
+  padding: 48px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.demo-content-1 {
+  border-color: var(--ig-secondary-200);
+  border-width: 2px;
+  border-style: dashed;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 32px;
+  padding: 32px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.customer-activity-conversations {
+  background-color: var(--ig-surface-500);
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  padding: 16px;
+  min-width: max-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.tabs {
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.buttons-1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: min-content;
+}
+.group_13 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_14 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 2px;
+  position: relative;
+  min-width: 50px;
+  flex-shrink: 0;
+}
+.group_15 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 2px;
+  position: relative;
+  min-width: 50px;
+  flex-shrink: 0;
+}
+.group_16 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 2px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  align-self: start;
+}
+.button_1 {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.checkbox {
+  width: max-content;
+  height: max-content;
+}
+.icon {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--ig-secondary-400);
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.text {
+  color: var(--ig-gray-700);
+  height: max-content;
+  min-width: min-content;
+}
+.text_1 {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.text_2 {
+  color: var(--ig-primary-500);
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.text_3 {
+  text-align: center;
+  height: max-content;
+  min-width: min-content;
+}
+.avatar {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: rgba(35, 117, 203, 0.3);
+}
+.hyperlink {
+  color: var(--ig-secondary-400);
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.text_4 {
+  height: max-content;
+  min-width: 140px;
+}
+.avatar_1 {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: rgba(119, 176, 97, 0.3);
+}
+.icon_1 {
+  color: var(--ig-success-500);
+}
+.hyperlink_1 {
+  color: var(--ig-secondary-500);
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.avatar_2 {
+  --ig-size: var(--ig-size-small);
+}
+.icon_2 {
+  color: var(--ig-gray-500);
+}
+.hyperlink_2 {
+  color: var(--ig-info-500);
+  height: max-content;
+  min-width: min-content;
+}
+.text_5 {
+  color: var(--ig-gray-600);
+  height: max-content;
+  min-width: min-content;
+}
+.image {
+  object-fit: cover;
+  min-width: 0;
+  min-height: 0;
+  max-width: 160px;
+  flex-shrink: 0;
+}
+.text_6 {
+  text-align: center;
+  color: var(--ig-gray-500);
+  height: max-content;
+  min-width: min-content;
+  max-width: 320px;
+}
+.avatar_3 {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: transparent;
+}
+.icon_3 {
+  color: var(--ig-gray-600);
+}
+.text_7 {
+  color: var(--ig-gray-800);
+  height: max-content;
+  min-width: min-content;
+}
+.chip {
+  width: max-content;
+  height: max-content;
+}
+.avatar_4::part(base) {
+  --igx-avatar-color: var(--ig-secondary-400);
+}
+.avatar_1_1::part(base) {
+  --igx-avatar-color: var(--ig-success-500);
+}
+.avatar_2_1::part(base) {
+  --igx-avatar-color: var(--ig-gray-500);
+}
+.avatar_2_2::part(base) {
+  --igx-avatar-color: var(--ig-gray-500);
+}
+.avatar_3_1::part(base) {
+  --igx-avatar-color: var(--ig-gray-600);
+}
+.avatar_3_2::part(base) {
+  --igx-avatar-color: var(--ig-gray-600);
+}
+.avatar_3_3::part(base) {
+  --igx-avatar-color: var(--ig-gray-600);
+}
+.tab-item-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  padding: 16px 0 0;
+  height: 100%;
+  min-width: 100%;
+  min-height: 50px;
+  max-height: 100%;
+}
+.tab-item-content_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  overflow: auto;
+  padding: 16px 0 0;
+  height: 100%;
+  min-width: 100%;
+  min-height: 50px;
+  max-height: 100%;
+}
+.grid {
+  --ig-size: var(--ig-size-medium);
+  min-width: 600px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.list {
+  height: max-content;
+}

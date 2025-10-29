@@ -1,0 +1,390 @@
+<div class="column-layout page-container">
+  <div class="column-layout group">
+    <div class="row-layout header">
+      <div class="row-layout page-title">
+        <igx-icon class="icon">
+          dashboard
+        </igx-icon>
+        <h5 class="content">
+          CRM Dashboard
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout metrics">
+    <igx-card class="card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="avatar avatar_7">
+            <igx-icon class="icon_1">
+              attach_money
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Total Revenue
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_1">
+          <h3 class="h3">
+            $250,000
+          </h3>
+          <div class="row-layout group_2">
+            <p class="ig-typography__subtitle-2 text">
+              +15%
+            </p>
+            <p class="ig-typography__body-2 content">
+              from last month
+            </p>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="avatar_1 avatar_1_1">
+            <igx-icon family="imx-icon" name="imx-scales-balanced" class="icon_1"></igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Avg. Deal Value
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_1">
+          <h3 class="h3">
+            $5,000
+          </h3>
+          <div class="row-layout group_2">
+            <p class="ig-typography__subtitle-2 text">
+              +5%
+            </p>
+            <p class="ig-typography__body-2 content">
+              from last month
+            </p>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="avatar_2 avatar_2_1">
+            <igx-icon class="icon_1">
+              person_add_alt
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          New Leads
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_1">
+          <h3 class="h3">
+            3
+          </h3>
+          <div class="row-layout group_2">
+            <p class="ig-typography__subtitle-2 text">
+              +23%
+            </p>
+            <p class="ig-typography__body-2 content">
+              from last month
+            </p>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="avatar_3 avatar_3_1">
+            <igx-icon class="icon_1">
+              people_outline
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Total Customers
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_1">
+          <h3 class="h3">
+            80
+          </h3>
+          <div class="row-layout group_2">
+            <p class="ig-typography__subtitle-2 text">
+              +0.5%
+            </p>
+            <p class="ig-typography__body-2 content">
+              from last month
+            </p>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="avatar_4 avatar_4_1">
+            <igx-icon class="icon_1">
+              support_agent
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Open Support Tickets
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_1">
+          <h3 class="h3">
+            2
+          </h3>
+          <div class="row-layout group_2">
+            <p class="ig-typography__subtitle-2 text_1">
+              -10%
+            </p>
+            <p class="ig-typography__body-2 content">
+              from last month
+            </p>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+  <div class="row-layout sections">
+    <div class="column-layout group_3">
+      <div class="column-layout group_4">
+        <div class="row-layout group_5">
+          <p class="content">
+            Quarterly Performance
+          </p>
+          <button igxButton="flat" type="button" [routerLink]="['/reports']" class="button">
+            <span>View all</span>
+            <igx-icon>
+              arrow_forward
+            </igx-icon>
+          </button>
+        </div>
+        <igx-category-chart [dataSource]="financialSales" chartType="column" initialGroups="Country" initialSummaries="SUM(Sales)" groupSorts="Country asc" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+      </div>
+      <div class="row-layout group_6">
+        <div class="column-layout group_7">
+          <div [routerLink]="['/customers']" class="row-layout group_5">
+            <p class="content">
+              New Accounts
+            </p>
+            <button igxButton="flat" type="button" [routerLink]="['/customers']" class="button">
+              <span>View all</span>
+              <igx-icon>
+                arrow_forward
+              </igx-icon>
+            </button>
+          </div>
+          <div class="column-layout group_8">
+            <igx-list class="list">
+              @for (item of northwindSwaggerCustomerDto; track item) {
+                <igx-list-item [selected]="this.listSelectedItem2 != null && this.listSelectedItem2 === item" (click)="listSelectedItem2 = item">
+                  <span igxListThumbnail>
+                    <igx-avatar shape="rounded" class="avatar_5 avatar_5_1">
+                      <igx-icon class="icon_2">
+                        business
+                      </igx-icon>
+                    </igx-avatar>
+                  </span>
+                  <span igxListLine>
+                    <div class="row-layout group_9">
+                      <div class="column-layout group_10">
+                        <a [routerLink]="['/customer-details/AROUT']" class="ig-typography__body-2 hyperlink">
+                          {{ item.companyName }}
+                        </a>
+                        <p class="ig-typography__caption text_2">
+                          {{ item.customerId }}
+                        </p>
+                      </div>
+                      <p class="ig-typography__body-2 text_2">
+                        {{ item.address?.country }}
+                      </p>
+                    </div>
+                  </span>
+                </igx-list-item>
+              }
+            </igx-list>
+          </div>
+        </div>
+        <div class="column-layout group_7">
+          <div class="row-layout group_11">
+            <p class="content">
+              Frequently contacted
+            </p>
+            <button igxButton="flat" type="button" [routerLink]="['/customers']" class="button">
+              <span>View all</span>
+              <igx-icon>
+                arrow_forward
+              </igx-icon>
+            </button>
+          </div>
+          <div class="column-layout group_8">
+            <igx-list class="list">
+              @for (item of northwindSwaggerCustomerDto; track item) {
+                <igx-list-item [selected]="this.listSelectedItem3 != null && this.listSelectedItem3 === item" (click)="listSelectedItem3 = item">
+                  <span igxListThumbnail>
+                    <igx-avatar shape="rounded" class="avatar_6 avatar_6_1">
+                      <igx-icon class="icon_3">
+                        perm_identity
+                      </igx-icon>
+                    </igx-avatar>
+                  </span>
+                  <span igxListLine>
+                    <div class="row-layout group_9">
+                      <div class="column-layout group_10">
+                        <p class="ig-typography__subtitle-2 text_3">
+                          {{ item.contactName }}
+                        </p>
+                        <p class="ig-typography__caption text_2">
+                          {{ item.companyName }}
+                        </p>
+                      </div>
+                      <igx-chip class="chip">
+                        <igx-prefix>
+                          <igx-icon class="icon_4">
+                            phone
+                          </igx-icon>
+                        </igx-prefix>
+                        {{ item.address?.phone }}
+                      </igx-chip>
+                    </div>
+                  </span>
+                </igx-list-item>
+              }
+            </igx-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout group_12">
+      <div class="column-layout group_4">
+        <div class="row-layout group_5">
+          <p class="content">
+            My Meetings
+          </p>
+          <button igxButton="flat" type="button" [routerLink]="['/calendar']" class="button">
+            <span>View all</span>
+            <igx-icon>
+              arrow_forward
+            </igx-icon>
+          </button>
+        </div>
+        <igx-list class="list">
+          @for (item of cRMAppMeetingsTasks; track item) {
+            <igx-list-item [selected]="this.listSelectedItem != null && this.listSelectedItem === item" (click)="listSelectedItem = item">
+              <span igxListThumbnail>
+                <igx-avatar shape="rounded" class="avatar_6 avatar_6_2">
+                  <igx-icon class="icon_5">
+                    calendar_month
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLine>
+                <div class="row-layout group_13">
+                  <div class="column-layout group_10">
+                    <div class="row-layout group_14">
+                      <p class="ig-typography__subtitle-2 text_3">
+                        Meeting with
+                      </p>
+                      <p class="ig-typography__subtitle-2 text_3">
+                        {{ item.Contact }}
+                      </p>
+                    </div>
+                    <div class="row-layout group_15">
+                      <p class="ig-typography__caption text_2">
+                        {{ item.MeetingDate }}
+                      </p>
+                      <p class="ig-typography__caption text_2">
+                        -
+                      </p>
+                      <p class="ig-typography__caption text_2">
+                        {{ item.MeetingTime }}
+                      </p>
+                    </div>
+                  </div>
+                  <igx-chip class="chip_1">
+                    {{ item.MeetingType }}
+                  </igx-chip>
+                </div>
+              </span>
+            </igx-list-item>
+          }
+        </igx-list>
+      </div>
+      <div class="column-layout group_4">
+        <div class="row-layout group_16">
+          <p class="content">
+            Today’s Tasks
+          </p>
+          <button igxButton="flat" type="button" [routerLink]="['/tasks']" class="button">
+            <span>View all</span>
+            <igx-icon>
+              arrow_forward
+            </igx-icon>
+          </button>
+        </div>
+        <igx-list class="list">
+          @for (item of cRMAppMeetingsTasks; track item) {
+            <igx-list-item [selected]="this.listSelectedItem1 != null && this.listSelectedItem1 === item" (click)="listSelectedItem1 = item">
+              <span igxListThumbnail>
+                <igx-avatar shape="rounded" class="avatar_6 avatar_6_3">
+                  <igx-icon class="icon_5">
+                    task_alt
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLine>
+                <div class="row-layout group_17">
+                  <div class="column-layout group_10">
+                    <div class="row-layout group_18">
+                      <p class="ig-typography__subtitle-2 text_3">
+                        {{ item.Task }}
+                      </p>
+                      <p class="ig-typography__subtitle-2 text_3">
+                        -
+                      </p>
+                      <p class="ig-typography__subtitle-2 text_3">
+                        {{ item.Company }}
+                      </p>
+                    </div>
+                    <div class="row-layout group_19">
+                      <p class="ig-typography__caption text_2">
+                        Due by
+                      </p>
+                      <p class="ig-typography__caption text_2">
+                        {{ item.DueDate }}
+                      </p>
+                    </div>
+                  </div>
+                  <igx-chip class="chip_1">
+                    {{ item.TaskStatus }}
+                  </igx-chip>
+                </div>
+              </span>
+            </igx-list-item>
+          }
+        </igx-list>
+      </div>
+    </div>
+  </div>
+</div>

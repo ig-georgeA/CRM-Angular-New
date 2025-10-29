@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IgxIconComponent } from 'igniteui-angular';
+import { IgxIconComponent } from '@infragistics/igniteui-angular';
 import { RevealViewOptions } from 'reveal-sdk-wrappers';
 import { RevealViewComponent } from 'reveal-sdk-wrappers-angular';
 

@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { IGridEditDoneEventArgs, IGX_CHIPS_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IgxButtonDirective, IgxDialogComponent, IgxIconComponent, IgxPaginatorComponent, IgxSnackbarComponent, IRowDataEventArgs } from 'igniteui-angular';
+import { IGridEditDoneEventArgs, IGX_CHIPS_DIRECTIVES, IGX_DIALOG_DIRECTIVES, IGX_GRID_ACTION_STRIP_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IgxButtonDirective, IgxDialogComponent, IgxIconComponent, IgxPaginatorComponent, IgxSnackbarComponent, IRowDataEventArgs } from '@infragistics/igniteui-angular';
 import { firstValueFrom, Subject, take, takeUntil } from 'rxjs';
 import { AddressDtoForm } from '../models/northwind-swagger/address-dto-forms';
 import { CustomerDto } from '../models/northwind-swagger/customer-dto';
